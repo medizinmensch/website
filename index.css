@@ -1,0 +1,110 @@
+/* Anfang Seite */
+body {
+  background-color: #ceb36e;
+}
+
+.site {
+  height: auto;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Consolas";
+
+  display: grid;
+  grid-template-columns: 1.5fr 5fr 1.5fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    ". header-cell ."
+    ". content-cell .";
+}
+
+.header-class {
+  padding: 0;
+  margin: 0;
+  background-color: #ceb36e;
+
+  grid-area: header-cell;
+
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "title-cell"
+    "navbar-cell";
+}
+
+.title {
+  border: 0px;
+  border-bottom: 2px;
+  border-color: #453c25;
+  border-style: solid;
+}
+
+h1 {
+  text-align: center;
+  color: #453c25;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  text-align: center;
+  color: #453c25;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.navbar {
+  border: 0px;
+  border-bottom: 2px;
+  border-color: #453c25;
+  border-style: solid;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #ceb36e;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navbar li {
+  text-align: center;
+}
+
+.navbar li a {
+  display: block;
+  color: #453c25;
+  padding: 20px 16px;
+  text-decoration: none;
+}
+
+
+.navbar li:hover {
+  background-color: #927222;
+}
+
+.navbar li a:hover {
+  color: #ceb36e;
+}
+
+@media only screen and (max-width: 800px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+  .site {
+    grid-template-columns: 0 5fr 0;
+  }
+}
+
+.main-content {
+  background-color: #ceb36e;
+  grid-area: content-cell;
+  padding: 0;
+  margin: 0;
+}
+
+/* Ende Seite */
