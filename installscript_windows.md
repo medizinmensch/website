@@ -3,22 +3,27 @@
 ## Install
 
 Cmd as Admin:
+```bash
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+```
 
 ## Packages
 
-### Basic
->choco install -y adobereader git autohotkey python3 windirstat cmder notepadplusplus irfanview 7zip nextcloud-client everything vlc chrome firefox sharex vscode jdk8
+```bash
+choco install -y adobereader git autohotkey python3 windirstat cmder notepadplusplus irfanview 7zip nextcloud-client everything vlc chrome firefox sharex vscode jdk8
+```
 
-### Desktop addons
->choco install -y audacity steam googlephotos blender docker-desktop dropbox duplicati epicgameslauncher handbrake mumble putty spotify zotero nvidia-display-driver
+*Desktop addons*
+
+```bash
+choco install -y audacity steam googlephotos blender docker-desktop dropbox duplicati epicgameslauncher handbrake mumble putty spotify zotero nvidia-display-driver
+```
 
 
 ### Optional
 - awscli
 - conemu
 - postman
-- putty
 
 # Additional Software
 

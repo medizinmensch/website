@@ -1,8 +1,8 @@
 # Update
-
->sudo apt update
->sudo apt upgrade
-
+```bash
+sudo apt update
+sudo apt upgrade
+```
 # Install
 ```bash
 sudo apt install zsh tilix build-essential htop keepassx python3-venv python3-pip python-dev python3-dev libevent-dev npm
@@ -34,11 +34,15 @@ sudo snap install pycharm-community --classic
 
 ## make zsh default shell
 
->sudo chsh -s /bin/zsh
+```bash
+sudo chsh -s /bin/zsh
+```
 
 ## make tilix default terminal
->gsettings set org.cinnamon.desktop.default-applications.terminal exec 'terminator'
+```bash
+gsettings set org.cinnamon.desktop.default-applications.terminal exec 'terminator'
+```
 
 # TODO
-fsearch 
-configs ?
+- fsearch 
+- configs ?
