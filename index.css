@@ -91,7 +91,7 @@ h2 {
   color: #ceb36e;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   .navbar ul {
     flex-direction: column;
   }
