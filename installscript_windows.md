@@ -28,6 +28,7 @@ choco install -y audacity steam googlephotos blender docker-desktop dropbox dupl
 # Additional Software
 
 - Office
+    - [login page](https://login.microsoftonline.com)
 
 *Desktop addons*
 - Adobe Suite
