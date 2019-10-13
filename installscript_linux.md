@@ -1,15 +1,13 @@
 # Update
-```bash
-sudo apt update
-sudo apt upgrade
-```
-# Install
-```bash
-sudo apt install zsh tilix build-essential htop keepassx python3-venv python3-pip python-dev python3-dev libevent-dev npm
-sudo apt install openjdk-11-jre openjdk-11-jdk
 
-wget https://github.com/sharkdp/bat/releases/download/v0.10.0/bat_0.10.0_amd64.deb
-sudo dpkg -i bat_0.10.0_amd64.deb
+```bash sudo apt update udo apt upgrade ```
+
+# Install
+
+```bash
+sudo apt install zsh tilix build-essential htop keepassx python3-venv python3-pip python-dev python3-dev libevent-dev npm fonts-powerline 
+sudo apt install openjdk-11-jre openjdk-11-jdk docker.io docker-compose yarn
+sudo apt install texlive-full texmaker
 ```
 
 ## Brew
@@ -20,29 +18,45 @@ test -r ~/.zshrc && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.zshr
 ```
 
 # Brew with shortcuts
+
 ```bash
 brew install fzf
 $(brew --prefix)/opt/fzf/install
+```
 
+# Snap
+
+```bash
 sudo apt install snapd
 snap xbindkey -y
-sudo snap install --classic code
+sudo snap install code --classic
 sudo snap install pycharm-community --classic
+sudo snap install intellij-community --classic
 ```
 
-# Setup
+# ohmyzsh
 
-## make zsh default shell
+Also makes **zsh default terminal**
 
 ```bash
-sudo chsh -s /bin/zsh
-```
-
-## make tilix default terminal
-```bash
-gsettings set org.cinnamon.desktop.default-applications.terminal exec 'terminator'
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
 # TODO
-- fsearch 
+
+- make terminator default terminal
 - configs ?
+
+
+# Execute all
+
+```bash
+
+
+
+
+
+```
+
+
+asdasdlkj
