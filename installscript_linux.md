@@ -42,6 +42,12 @@ Also makes **zsh default terminal**
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
+# i3 config
+To change i3 color config, copy the file from `website/backups/.i3/config` to `~/.i3/config`. Changed is:
+
+* Theme Colors -> class -> client.focues / background
+
+
 # TODO
 
 - make terminator default terminal
@@ -59,4 +65,3 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 ```
 
 
-asdasdlkj
