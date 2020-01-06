@@ -6,7 +6,7 @@
 
 ```bash
 sudo apt install zsh tilix build-essential htop keepassx python3-venv python3-pip python-dev python3-dev libevent-dev npm fonts-powerline 
-sudo apt install openjdk-11-jre openjdk-11-jdk docker.io docker-compose yarn
+sudo apt install openjdk-11-jre openjdk-11-jdk docker.io docker-compose yarn flameshot
 sudo apt install texlive-full texmaker
 ```
 
