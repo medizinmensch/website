@@ -1,6 +1,8 @@
 # Update
 
-```bash sudo apt update udo apt upgrade ```
+```bash
+sudo pacman -Syu 
+```
 
 # Install
 
@@ -42,11 +44,43 @@ Also makes **zsh default terminal**
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-# i3 config
+# Git config / dotfiles repository
+
+As explained [here](https://www.atlassian.com/git/tutorials/dotfiles) or in the pdf in negasave backup folder. The following is not yet 100% tested, but should work. 
+
+1. copy `.zshrc` from [dotfiles](https://github.com/medizinmensch/dotfiles/) repository to `~` path
+2. exec
+```bash
+echo ".cfg" >> .gitignore
+git clone --bare https://github.com/medizinmensch/dotfiles/ $Home/.dotfiles
+config checkout
+config config --local status.showUntrackedFiles no
+```
+
+(to prevent recursion problems, clone, download and ignore untracked files)
+
+# i3
 To change i3 color config, copy the file from `website/backups/.i3/config` to `~/.i3/config`. Changed is:
 
 * Theme Colors -> class -> client.focues / background
 
+# duplicati
+Like explained [here](https://xo.tc/installing-duplicati-on-an-arch-linux-laptop.html). 
+
+**Install:**
+
+```bash
+git clone https://aur.archlinux.org/duplicati-latest.git
+cd duplicati-latest
+makepkg -si
+```
+
+**Start service:**
+
+```bash
+sudo systemctl enable duplicati.service
+sudo systemctl start duplicati.service
+```
 
 # TODO
 
