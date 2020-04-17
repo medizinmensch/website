@@ -81,6 +81,7 @@ makepkg -si
 sudo systemctl enable duplicati.service
 sudo systemctl start duplicati.service
 ```
+Access at [localhost:8200](http://localhost:8200)
 
 # TODO
 
