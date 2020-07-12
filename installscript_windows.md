@@ -10,7 +10,7 @@ Cmd as Admin:
 ## Universal Packages (Fracky/Lenno)
 
 ```bash
-choco install -y adobereader git autohotkey windirstat cmder notepadplusplus irfanview 7zip nextcloud-client everything vlc chrome firefox sharex vscode jdk8 
+choco install -y adobereader git autohotkey windirstat cmder notepadplusplus irfanview 7zip nextcloud-client everything vlc chrome firefox sharex vscode jdk8 keepassxc
 ```
 
 ## Desktop Exclusive Packges (Fracky)
@@ -47,11 +47,13 @@ choco install -y audacity steam epicgameslauncher googlephotos blender docker-de
 - Firefox
 - Word
 - steam
+- vscode: Sync Settings
 
 ## Software
 
 - OBS
 - autohotkey standardscript ( Win+R --> "shell:startup", copy ahk link there)
 - openconnect-gui (`https://vpncl.htw-berlin.de`)
+- everything
 
 
