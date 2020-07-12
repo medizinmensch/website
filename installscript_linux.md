@@ -1,15 +1,15 @@
 # Update
-```bash
-sudo apt update
-sudo apt upgrade
-```
-# Install
-```bash
-sudo apt install zsh tilix build-essential htop keepassx python3-venv python3-pip python-dev python3-dev libevent-dev npm
-sudo apt install openjdk-11-jre openjdk-11-jdk
 
-wget https://github.com/sharkdp/bat/releases/download/v0.10.0/bat_0.10.0_amd64.deb
-sudo dpkg -i bat_0.10.0_amd64.deb
+```bash
+sudo pacman -Syu 
+```
+
+# Install
+
+```bash
+sudo apt install zsh tilix build-essential htop keepassx python3-venv python3-pip python-dev python3-dev libevent-dev npm fonts-powerline 
+sudo apt install openjdk-11-jre openjdk-11-jdk docker.io docker-compose yarn flameshot
+sudo apt install texlive-full texmaker
 ```
 
 ## Brew
@@ -20,29 +20,83 @@ test -r ~/.zshrc && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.zshr
 ```
 
 # Brew with shortcuts
+
 ```bash
 brew install fzf
 $(brew --prefix)/opt/fzf/install
+```
 
+# Snap
+
+```bash
 sudo apt install snapd
 snap xbindkey -y
-sudo snap install --classic code
+sudo snap install code --classic
 sudo snap install pycharm-community --classic
+sudo snap install intellij-community --classic
 ```
 
-# Setup
+# ohmyzsh
 
-## make zsh default shell
+Also makes **zsh default terminal**
 
 ```bash
-sudo chsh -s /bin/zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-## make tilix default terminal
+# Git config / dotfiles repository
+
+As explained [here](https://www.atlassian.com/git/tutorials/dotfiles) or in the pdf in negasave backup folder. The following is not yet 100% tested, but should work. 
+
+1. copy `.zshrc` from [dotfiles](https://github.com/medizinmensch/dotfiles/) repository to `~` path
+2. exec
 ```bash
-gsettings set org.cinnamon.desktop.default-applications.terminal exec 'terminator'
+echo ".cfg" >> .gitignore
+git clone --bare https://github.com/medizinmensch/dotfiles/ $Home/.dotfiles
+config checkout
+config config --local status.showUntrackedFiles no
 ```
+
+(to prevent recursion problems, clone, download and ignore untracked files)
+
+# i3
+To change i3 color config, copy the file from `website/backups/.i3/config` to `~/.i3/config`. Changed is:
+
+* Theme Colors -> class -> client.focues / background
+
+# duplicati
+Like explained [here](https://xo.tc/installing-duplicati-on-an-arch-linux-laptop.html). 
+
+**Install:**
+
+```bash
+git clone https://aur.archlinux.org/duplicati-latest.git
+cd duplicati-latest
+makepkg -si
+```
+
+**Start service:**
+
+```bash
+sudo systemctl enable duplicati.service
+sudo systemctl start duplicati.service
+```
+Access at [localhost:8200](http://localhost:8200)
 
 # TODO
-- fsearch 
+
+- make terminator default terminal
 - configs ?
+
+
+# Execute all
+
+```bash
+
+
+
+
+
+```
+
+
