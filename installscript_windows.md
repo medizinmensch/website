@@ -58,6 +58,7 @@ In Admin shell, run:
 Get-Service -Name ssh-agent | Set-Service -StartupType Automatic`
 Start-Service ssh-agent`
 ssh-add.exe C:\Users\Youri\.ssh\id_rsa
+$Env:GIT_SSH=$((Get-Command -Name ssh).Source)
 ```
 
 In case it's not working when login into remote machine:  Download the latest [Windows OpenSSH release](https://github.com/PowerShell/Win32-OpenSSH/releases), uncomment the last 3 lines from the `install-sshd.ps1` so that it looks like this: 
