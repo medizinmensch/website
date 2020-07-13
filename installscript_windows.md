@@ -49,6 +49,20 @@ choco install -y audacity steam epicgameslauncher googlephotos blender docker-de
 - steam
 - vscode: Sync Settings
 
+
+## setup ssh agent:
+
+In Admin shell, run:
+
+```powershell
+Get-Service -Name ssh-agent | Set-Service -StartupType Automatic`
+Start-Service ssh-agent`
+ssh-add.exe C:\Users\Youri\.ssh\id_rsa
+```
+
+In case it's not working when login into remote machine:  Download the latest [Windows OpenSSH release](https://github.com/PowerShell/Win32-OpenSSH/releases), uncomment the last 3 lines from the `install-sshd.ps1` so that it looks like this: 
+
+
 ## Software
 
 - OBS
