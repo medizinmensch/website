@@ -10,13 +10,13 @@ Cmd as Admin:
 ## Universal Packages (Fracky/Lenno)
 
 ```bash
-choco install -y adobereader git autohotkey windirstat cmder notepadplusplus irfanview 7zip nextcloud-client everything vlc chrome firefox sharex vscode jdk8 keepassxc
+choco install -y adobereader git autohotkey windirstat cmder notepadplusplus irfanview 7zip nextcloud-client everything vlc firefox sharex vscode jdk8 keepassxc discord deluge chromium
 ```
 
 ## Desktop Exclusive Packges (Fracky)
 
 ```bash
-choco install -y audacity steam epicgameslauncher googlephotos blender docker-desktop duplicati spotify zotero nvidia-display-driver obs-studio filezilla minecraft ffmpeg openconnect-gui nodejs
+choco install -y audacity steam epicgameslauncher googlephotos blender docker-desktop duplicati spotify zotero-studio minecraft ffmpeg signal teamspeak
 ```
 
 ### Optional
@@ -29,7 +29,9 @@ choco install -y audacity steam epicgameslauncher googlephotos blender docker-de
 ## Manual
 - Office
     - [login page](https://login.microsoftonline.com)
-- Logitech Gaming Software (9.0)
+- [nvidia driver](https://www.nvidia.de/Download/index.aspx?lang=de)
+(- Logitech Gaming Software (9.0))
+
 
 ## Windows Store
 
@@ -48,6 +50,8 @@ choco install -y audacity steam epicgameslauncher googlephotos blender docker-de
 - Word
 - steam
 - vscode: Sync Settings
+- Telegram
+
 
 
 ## setup ssh agent:
@@ -66,9 +70,17 @@ In case it's not working when login into remote machine:  Download the latest [W
 
 ## Software
 
-- OBS
+- OBS (copy from `%APP_DATA\Roaming\obs-studio\`
 - autohotkey standardscript ( Win+R --> "shell:startup", copy ahk link there)
 - openconnect-gui (`https://vpncl.htw-berlin.de`)
-- everything
+- everything:
+    - Settings -> Keyboard -> Show window Hotkey `Ctrl + Alt + Shift + X`
 
+## Windows Explorer
+
+View:
+    -> enable "Show file name extensions"
+    -> Options: 
+        ->  Open File Explorer to -> "This PC"
+        -> View -> Show hidden files, folders and drives
 
