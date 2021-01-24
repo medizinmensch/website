@@ -16,7 +16,7 @@ choco install -y adobereader git autohotkey windirstat cmder notepadplusplus irf
 
 ## Desktop Exclusive Packges (Fracky)
 
-First, uninstall spotify (Windows App) as this disturbs the install of spotify via Chocolately.
+First, **uninstall spotify** (Windows App) as this disturbs the install of spotify via Chocolately.
 
 ```bash
 choco install -y audacity steam epicgameslauncher googlephotos blender docker-desktop duplicati spotify zotero-studio minecraft ffmpeg signal teamspeak
