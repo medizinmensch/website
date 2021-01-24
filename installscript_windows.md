@@ -2,18 +2,21 @@
 
 ## Install
 
-Cmd as Admin:
+Cmd as **Admin**:
 ```bash
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 ```
 
 ## Universal Packages (Fracky/Lenno)
 
+
 ```bash
 choco install -y adobereader git autohotkey windirstat cmder notepadplusplus irfanview 7zip nextcloud-client everything vlc firefox sharex vscode jdk8 keepassxc discord deluge chromium
 ```
 
 ## Desktop Exclusive Packges (Fracky)
+
+First, uninstall spotify (Windows App) as this disturbs the install of spotify via Chocolately.
 
 ```bash
 choco install -y audacity steam epicgameslauncher googlephotos blender docker-desktop duplicati spotify zotero-studio minecraft ffmpeg signal teamspeak
@@ -26,7 +29,7 @@ choco install -y audacity steam epicgameslauncher googlephotos blender docker-de
 
 # Additional Software
 
-## Manual
+## Manually
 - Office
     - [login page](https://login.microsoftonline.com)
 - [nvidia driver](https://www.nvidia.de/Download/index.aspx?lang=de)
@@ -50,8 +53,7 @@ choco install -y audacity steam epicgameslauncher googlephotos blender docker-de
 - Word
 - steam
 - vscode: Sync Settings
-- Telegram
-
+- Google, Telegram, Whatsapp, ...
 
 
 ## setup ssh agent:
@@ -70,17 +72,17 @@ In case it's not working when login into remote machine:  Download the latest [W
 
 ## Software
 
-- OBS (copy from `%APP_DATA\Roaming\obs-studio\`
-- autohotkey standardscript ( Win+R --> "shell:startup", copy ahk link there)
+- OBS (copy backup from `%APP_DATA\Roaming\obs-studio\`)
+- autohotkey standardscript ( Win+R --> "shell:startup", copy ahk link from `Nextcloud\Document\NEGASAVE` there)
 - openconnect-gui (`https://vpncl.htw-berlin.de`)
 - everything:
     - Settings -> Keyboard -> Show window Hotkey `Ctrl + Alt + Shift + X`
 
 ## Windows Explorer
 
-View:
-    -> enable "Show file name extensions"
-    -> Options: 
-        ->  Open File Explorer to -> "This PC"
-        -> View -> Show hidden files, folders and drives
+* View:
+    * -> enable "Show file name extensions"
+    * -> Options: 
+        * -> Open File Explorer to -> "This PC"
+        * -> View -> Show hidden files, folders and drives
 
