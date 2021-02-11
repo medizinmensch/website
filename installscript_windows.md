@@ -50,6 +50,7 @@ choco install -y audacity steam epicgameslauncher googlephotos blender docker-de
 ## Logins
 - nextcloud
 - Firefox
+    - To disable Alt key: Go to `about:config` and set `ui.key.menuAccessKeyFocuses` to false ([source](https://support.mozilla.org/en-US/questions/1278533))
 - Word
 - steam
 - vscode: Sync Settings
