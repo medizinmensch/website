@@ -1,3 +1,8 @@
+---
+layout: post
+title: Installation instructions of my Private Windows Systems
+---
+
 # Choco
 
 ## Install
