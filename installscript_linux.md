@@ -89,14 +89,4 @@ Access at [localhost:8200](http://localhost:8200)
 - configs ?
 
 
-# Execute all
-
-```bash
-
-
-
-
-
-```
-
 
