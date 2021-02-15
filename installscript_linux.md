@@ -87,5 +87,3 @@ Access at [localhost:8200](http://localhost:8200)
 
 - make terminator default terminal
 - configs ?
-
-
