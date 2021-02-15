@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Update
 
 ```bash
