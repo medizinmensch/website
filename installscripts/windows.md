@@ -56,6 +56,7 @@ choco install -y audacity steam epicgameslauncher googlephotos blender docker-de
 - nextcloud
 - Firefox
     - To disable Alt key: Go to `about:config` and set `ui.key.menuAccessKeyFocuses` to false ([source](https://support.mozilla.org/en-US/questions/1278533))
+    - To no select space after double clicking a word: Go to `about:config` and set `layout.word_select.eat_space_to_next_word` to false ([source](https://superuser.com/a/1623999/1277585))
 - Word
 - steam
 - vscode: Sync Settings
