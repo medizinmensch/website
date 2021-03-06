@@ -16,7 +16,7 @@ build_search_index = false
 highlight_code = true
 
 [extra]
-# Put all your custom variables here
+# Put all your custom variables here 
 version = "v2.0"
 author = "Youri Seichter"
 github = "medizinmensch"
