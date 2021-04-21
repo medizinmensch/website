@@ -52,8 +52,10 @@ choco install -y audacity steam epicgameslauncher googlephotos blender docker-de
 ## Logins
 - nextcloud
 - Firefox
-    - To disable Alt key: Go to `about:config` and set `ui.key.menuAccessKeyFocuses` to false ([source](https://support.mozilla.org/en-US/questions/1278533))
-    - To no select space after double clicking a word: Go to `about:config` and set `layout.word_select.eat_space_to_next_word` to false ([source](https://superuser.com/a/1623999/1277585))
+    - `about:config` changes:
+      - disable Alt key: set `ui.key.menuAccessKeyFocuses` to false ([source](https://support.mozilla.org/en-US/questions/1278533))
+      - don't select space after double clicking a word: set `layout.word_select.eat_space_to_next_word` to false ([source](https://superuser.com/a/1623999/1277585))
+      - reduce delay on download: set `security.dialog_enable_delay` to 300ms ([source](https://support.mozilla.org/en-US/questions/1176544))
 - Word
 - steam
 - vscode: Sync Settings
@@ -89,4 +91,3 @@ In case it's not working when login into remote machine:  Download the latest [W
     * -> Options: 
         * -> Open File Explorer to -> "This PC"
         * -> View -> Show hidden files, folders and drives
-
