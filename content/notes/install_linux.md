@@ -11,7 +11,7 @@ sudo pacman -Syu
 ```
 
 # Install
-
+Full list ...[todo]
 ```bash
 sudo apt install zsh tilix build-essential htop keepassx python3-venv python3-pip python-dev python3-dev libevent-dev npm fonts-powerline 
 sudo apt install openjdk-11-jre openjdk-11-jdk docker.io docker-compose yarn flameshot
@@ -93,3 +93,11 @@ Access at [localhost:8200](http://localhost:8200)
 
 - make terminator default terminal
 - configs ?
+
+
+# Teardown
+
+## List Packages
+```bash
+expac -H M "%011m	%-20n	%10d" $(comm -23 <(pacman -Qqen | sort) <({ pacman -Qqg base-devel; expac -l n %E base; } | sort | uniq)) | sort -n
+```
