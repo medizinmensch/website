@@ -4,7 +4,13 @@ date = 2021-04-21
 updated =2021-04-21
 +++
 
-Current packages 2021-04-21
+
+# Current packages 2021-04-21
+
+```bash
+expac -H M "%011m\t%-20n\t%10d" $(comm -23 <(pacman -Qqen | sort) <({ pacman -Qqg base-devel; expac -l '\n' '%E' base; } | sort | uniq)) | sort -n
+```
+
 ```
    0.00 MiB	maia-console        	Maia color scheme for the console and shell dialog
    0.00 MiB	manjaro-alsa        	manjaro ALSA support (Meta-PKG)
@@ -313,4 +319,49 @@ Current packages 2021-04-21
  234.97 MiB	mariadb             	Fast SQL database server, derived from MySQL
  327.10 MiB	signal-desktop      	Signal Private Messenger for Linux
  652.26 MiB	linux-firmware      	Firmware files for Linux (Manjaro Overlay Package)
+```
+
+# Extra packages
+
+(includes `yay`)
+```
+pacman -Qm
+```
+
+
+```
+astyle-svn r672-1
+czmq-git 20210117-1
+duplicati-latest 2.0.5.112-1
+electron9 9.4.3-1
+js60 60.9.0-2
+libfprint-vfs009x-git 1:1.90.1.r5.ge34de1d-2
+linux-latest 5.10-1
+mhwd-catalyst 1:15.201.1151-2
+mhwd-nvidia-340xx 340.108-1
+mozilla-common 1.4-6
+nanomsg-git 1.1.5.r5.gaab95026-1
+open-fuse-iso 1.1-1
+pm2ml 2017.12-5
+powerpill 2020.12.15-2
+python-dbus 1.2.16-3
+python-dbus-common 1.2.16-3
+python-pillow-simd 1:7.0.0.post3-3
+python-sip-pyqt5 4.19.19-3
+python2-dbus 1.2.16-3
+python2-mutagen 1.43.0-3
+python3-memoizedb 2017.3.30-5
+python3-xcgf 2017.3-5
+python3-xcpf 2019.11-3
+splatmoji-git r92.b8d14b4-1
+spotify 1:1.1.56.595-1
+srandrd 0.6.0-1
+timeset 1.6-1
+visual-studio-code-bin 1.52.1-1
+xdg-su 1.2.3-2
+xf86-input-keyboard 1.9.0-3
+xf86-input-mouse 1.9.3-1
+xorg-font-utils 7.6-6
+zoom 5.5.0-1
+zotero 5.0.96-1
 ```
