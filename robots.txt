@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://medizinmensch.github.io/website/sitemap.xml
