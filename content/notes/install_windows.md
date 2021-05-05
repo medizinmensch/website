@@ -56,6 +56,7 @@ choco install -y audacity steam epicgameslauncher googlephotos blender docker-de
       - disable Alt key: set `ui.key.menuAccessKeyFocuses` to false ([source](https://support.mozilla.org/en-US/questions/1278533))
       - don't select space after double clicking a word: set `layout.word_select.eat_space_to_next_word` to false ([source](https://superuser.com/a/1623999/1277585))
       - reduce delay on download: set `security.dialog_enable_delay` to 300ms ([source](https://support.mozilla.org/en-US/questions/1176544))
+      - disable ["This Connection is not Secure" Warning](https://www.ghacks.net/2017/06/13/firefox-disable-this-connection-is-not-secure-warnings/) (for pages like fritz.box) `security.insecure_field_warning.contextual.enabled`
 - Word
 - steam
 - vscode: Sync Settings
