@@ -422,4 +422,12 @@ zotero 5.0.96.2-3
 
 # Reasonable Packages:
 
-alacritty ant aws-cli bash-completion bat blueman bluez-utils bmenu borg chromium dbeaver deluge-gtk discord docker-compose emacs exa fd ffmpeg firefox flac flameshot foliate fzy gimp git git-crypt git-delta github-cli gparted gradle htop hugo intellij-idea-community-edition iproute2 iputils jq keepassxc keychain less logrotate lsd man-db man-pages mariadb maven minikube ncdu neofetch neovim nextcloud-client ninja npm nvm obs-studio okular openssh p7zip pandoc pcmanfm plocate polybar powerline-fonts powertop pwgen ranger rpi-imager rsync screenfetch sed signal-desktop snapd spectre-meltdown-checker speedtest-cli sshuttle tar tcpdump telegram-desktop terminator terminus-font terraform tldr tree ttf-bitstream-vera ttf-dejavu ttf-droid ttf-inconsolata ttf-indic-otf ttf-joypixels ttf-liberation unzip vi vim vlc wget yarn yay zip zola zsh powerpill srandrd visual-studio-code-bin zoom zotero
+pacman packages:
+```
+alacritty ant aws-cli bash-completion bat blueman bluez-utils bmenu borg chromium dbeaver deluge-gtk discord docker-compose emacs exa fd ffmpeg firefox flac flameshot foliate fzy gimp git git-crypt git-delta github-cli gparted gradle htop hugo intellij-idea-community-edition iproute2 iputils jq keepassxc keychain less logrotate lsd man-db man-pages mariadb maven minikube ncdu neofetch neovim nextcloud-client ninja npm nvm obs-studio okular openssh p7zip pandoc pcmanfm plocate polybar powerline-fonts powertop pwgen ranger rpi-imager rsync screenfetch sed signal-desktop snapd spectre-meltdown-checker speedtest-cli sshuttle tar tcpdump telegram-desktop terminator terminus-font terraform tldr tree ttf-bitstream-vera ttf-dejavu ttf-droid ttf-inconsolata ttf-indic-otf ttf-joypixels ttf-liberation unzip vi vim vlc wget yarn yay zip zola zsh 
+```
+
+AUR packages:
+```
+powerpill srandrd visual-studio-code-bin zoom zotero
+```
