@@ -428,6 +428,7 @@ alacritty ant aws-cli bash-completion bat blueman bluez-utils bmenu borg chromiu
 ```
 
 AUR packages:
+AUR packages:
 ```
 powerpill srandrd visual-studio-code-bin zoom zotero
 ```
