@@ -94,6 +94,9 @@ Access at [localhost:8200](http://localhost:8200)
 - make terminator default terminal
 - configs ?
 
+# K8s / Kubernetes
+
+Install kubectl, helm etc. with [arkade](https://github.com/alexellis/arkade). 
 
 # Teardown
 
