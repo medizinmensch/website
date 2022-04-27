@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        
+
+        <title>Youri Seichter</title>
+
+        
+            <link rel="stylesheet" href="https://medizinmensch.github.io/website/theme.css">
+        
+        
+    </head>
+    <body>
+        <div class="content">
+        
+        
+            <header>
+                <div class="header-left">
+                    <a href="https:&#x2F;&#x2F;medizinmensch.github.io&#x2F;website" class="logo">Youri Seichter</a>
+                </div>
+                <div class="header-right">
+                    <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
+                        
+                        
+                            
+                            <li class="nav">
+                                <a itemprop="url" href="https://medizinmensch.github.io/website/about/">
+                                    <span itemprop="name">About |</span>
+                                </a>
+                            </li>
+                        
+                            
+                            <li class="nav">
+                                <a itemprop="url" href="https://medizinmensch.github.io/website/notes/">
+                                    <span itemprop="name">Notes |</span>
+                                </a>
+                            </li>
+                        
+                        
+                        <li class="nav">
+                            <a itemprop="url" href="https://github.com/medizinmensch">
+                                <img class="icon" src="https:&#x2F;&#x2F;medizinmensch.github.io&#x2F;website/icons/github.svg" alt="Github">
+                            </a>
+                        </li>
+                        
+                        
+                        <li class="nav">
+                            <a itemprop="url" href="https://twitter.com/YouriSeichter">
+                                <img class="icon" src="https:&#x2F;&#x2F;medizinmensch.github.io&#x2F;website/icons/twitter.svg" alt="Github">
+                            </a>
+                        </li>
+                        
+                    </nav>
+                </div>
+            </header>
+        
+        
+        <main>
+            
+<article itemscope itemtype="http://schema.org/BlogPosting">
+    <div itemprop="headline">
+        <h1>Install Windows</h1>
+        <div class="border"></div>
+    </div>
+    <div itemprop="articleBody">
+        <h1 id="choco">Choco</h1>
+<h2 id="install">Install</h2>
+<p>Cmd as <strong>Admin</strong>:</p>
+<pre style="background-color:#2b303b;">
+<code class="language-bash" data-lang="bash"><span style="color:#bf616a;">@</span><span style="color:#c0c5ce;">&quot;</span><span style="color:#a3be8c;">%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe</span><span style="color:#c0c5ce;">&quot;</span><span style="color:#bf616a;"> -NoProfile -InputFormat</span><span style="color:#c0c5ce;"> None</span><span style="color:#bf616a;"> -ExecutionPolicy</span><span style="color:#c0c5ce;"> Bypass</span><span style="color:#bf616a;"> -Command </span><span style="color:#c0c5ce;">&quot;</span><span style="color:#a3be8c;">iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))</span><span style="color:#c0c5ce;">&quot; &amp;&amp; </span><span style="color:#bf616a;">SET </span><span style="color:#c0c5ce;">&quot;</span><span style="color:#a3be8c;">PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin</span><span style="color:#c0c5ce;">&quot;
+</span></code></pre><h2 id="universal-packages-fracky-lenno">Universal Packages (Fracky/Lenno)</h2>
+<pre style="background-color:#2b303b;">
+<code class="language-bash" data-lang="bash"><span style="color:#bf616a;">choco</span><span style="color:#c0c5ce;"> install</span><span style="color:#bf616a;"> -y</span><span style="color:#c0c5ce;"> adobereader git autohotkey windirstat cmder notepadplusplus irfanview 7zip nextcloud-client everything vlc firefox sharex vscode jdk8 keepassxc discord deluge chromium
+</span></code></pre><h2 id="desktop-exclusive-packges-fracky">Desktop Exclusive Packges (Fracky)</h2>
+<p>First, <strong>uninstall spotify</strong> (Windows App) as this disturbs the install of spotify via Chocolately.</p>
+<pre style="background-color:#2b303b;">
+<code class="language-bash" data-lang="bash"><span style="color:#bf616a;">choco</span><span style="color:#c0c5ce;"> install</span><span style="color:#bf616a;"> -y</span><span style="color:#c0c5ce;"> audacity steam epicgameslauncher googlephotos blender docker-desktop duplicati spotify zotero-studio minecraft ffmpeg signal teamspeak
+</span></code></pre><h3 id="optional">Optional</h3>
+<ul>
+<li>awscli</li>
+<li>conemu</li>
+<li>postman</li>
+</ul>
+<h1 id="additional-software">Additional Software</h1>
+<h2 id="manually">Manually</h2>
+<ul>
+<li>Office <a href="https://login.microsoftonline.com">login page</a></li>
+<li><a href="https://www.nvidia.de/Download/index.aspx?lang=de">nvidia driver</a></li>
+<li>(Logitech Gaming Software (9.0))</li>
+</ul>
+<h2 id="windows-store">Windows Store</h2>
+<ul>
+<li>Terminal</li>
+<li>python3</li>
+</ul>
+<p><em>Desktop addons</em></p>
+<ul>
+<li>Adobe Suite</li>
+</ul>
+<h1 id="configuration">Configuration</h1>
+<h2 id="logins">Logins</h2>
+<ul>
+<li>nextcloud</li>
+<li>Firefox
+<ul>
+<li><code>about:config</code> changes:
+<ul>
+<li>disable Alt key: set <code>ui.key.menuAccessKeyFocuses</code> to false (<a href="https://support.mozilla.org/en-US/questions/1278533">source</a>)</li>
+<li>don't select space after double clicking a word: set <code>layout.word_select.eat_space_to_next_word</code> to false (<a href="https://superuser.com/a/1623999/1277585">source</a>)</li>
+<li>reduce delay on download: set <code>security.dialog_enable_delay</code> to 300ms (<a href="https://support.mozilla.org/en-US/questions/1176544">source</a>)</li>
+<li>disable <a href="https://www.ghacks.net/2017/06/13/firefox-disable-this-connection-is-not-secure-warnings/">&quot;This Connection is not Secure&quot; Warning</a> (for pages like fritz.box) <code>security.insecure_field_warning.contextual.enabled</code></li>
+<li>disable Fullscreen &quot;XY is now Fullscreen&quot; text. Set <code>full-screen-api.warning.timeout</code> to <code>0</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Word</li>
+<li>steam</li>
+<li>vscode: Sync Settings</li>
+<li>Google, Telegram, Whatsapp, ...</li>
+</ul>
+<h2 id="setup-ssh-agent">setup ssh agent:</h2>
+<p>In Admin shell, run:</p>
+<pre style="background-color:#2b303b;">
+<code class="language-powershell" data-lang="powershell"><span style="color:#96b5b4;">Get-Service </span><span style="color:#c0c5ce;">-Name ssh-agent | </span><span style="color:#96b5b4;">Set-Service </span><span style="color:#c0c5ce;">-StartupType Automatic`
+</span><span style="color:#96b5b4;">Start-Service</span><span style="color:#c0c5ce;"> ssh-agent`
+</span><span style="color:#96b5b4;">ssh-add.exe</span><span style="color:#c0c5ce;"> C:\Users\Youri\.ssh\id_rsa
+$</span><span style="color:#bf616a;">Env:GIT_SSH</span><span style="color:#c0c5ce;">=$((</span><span style="color:#96b5b4;">Get-Command </span><span style="color:#c0c5ce;">-Name ssh).Source)
+</span></code></pre>
+<p>In case it's not working when login into remote machine:  Download the latest <a href="https://github.com/PowerShell/Win32-OpenSSH/releases">Windows OpenSSH release</a>, uncomment the last 3 lines from the <code>install-sshd.ps1</code> so that it looks like this: </p>
+<h2 id="software">Software</h2>
+<ul>
+<li>OBS (copy backup from <code>%APP_DATA\Roaming\obs-studio\</code>)</li>
+<li>autohotkey standardscript ( Win+R --&gt; &quot;shell:startup&quot;, copy ahk link from <code>Nextcloud\Document\NEGASAVE</code> there)</li>
+<li>openconnect-gui (<code>https://vpncl.htw-berlin.de</code>)</li>
+<li>everything:
+<ul>
+<li>Settings -&gt; Keyboard -&gt; Show window Hotkey <code>Ctrl + Alt + Shift + X</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="windows-explorer">Windows Explorer</h2>
+<ul>
+<li>View:
+<ul>
+<li>-&gt; enable &quot;Show file name extensions&quot;</li>
+<li>-&gt; Options: 
+<ul>
+<li>-&gt; Open File Explorer to -&gt; &quot;This PC&quot;</li>
+<li>-&gt; View -&gt; Show hidden files, folders and drives</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+    <time datetime="2019-11-27" class="date" itemprop="datePublished">
+        27 Nov 2019
+    </time>
+</article>
+
+        </main>
+        
+        <footer>
+            
+            <div class="border"></div>
+            <div class="footer">
+                <small class="footer-left">
+                    Copyright &copy; Youri Seichter
+                </small>
+                <small class="footer-right">
+                    v2.1
+                </small>
+            </div>
+        
+        </footer>
+    
+        </div>
+    </body>
+</html>

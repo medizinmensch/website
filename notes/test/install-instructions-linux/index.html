@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        
+
+        <title>Youri Seichter</title>
+
+        
+            <link rel="stylesheet" href="https://medizinmensch.github.io/website/theme.css">
+        
+        
+    </head>
+    <body>
+        <div class="content">
+        
+        
+            <header>
+                <div class="header-left">
+                    <a href="https:&#x2F;&#x2F;medizinmensch.github.io&#x2F;website" class="logo">Youri Seichter</a>
+                </div>
+                <div class="header-right">
+                    <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
+                        
+                        
+                            
+                            <li class="nav">
+                                <a itemprop="url" href="https://medizinmensch.github.io/website/about/">
+                                    <span itemprop="name">About |</span>
+                                </a>
+                            </li>
+                        
+                            
+                            <li class="nav">
+                                <a itemprop="url" href="https://medizinmensch.github.io/website/notes/">
+                                    <span itemprop="name">Notes |</span>
+                                </a>
+                            </li>
+                        
+                        
+                        <li class="nav">
+                            <a itemprop="url" href="https://github.com/medizinmensch">
+                                <img class="icon" src="https:&#x2F;&#x2F;medizinmensch.github.io&#x2F;website/icons/github.svg" alt="Github">
+                            </a>
+                        </li>
+                        
+                        
+                        <li class="nav">
+                            <a itemprop="url" href="https://twitter.com/YouriSeichter">
+                                <img class="icon" src="https:&#x2F;&#x2F;medizinmensch.github.io&#x2F;website/icons/twitter.svg" alt="Github">
+                            </a>
+                        </li>
+                        
+                    </nav>
+                </div>
+            </header>
+        
+        
+        <main>
+            
+<article itemscope itemtype="http://schema.org/BlogPosting">
+    <div itemprop="headline">
+        <h1>Install inststructions2: Linux</h1>
+        <div class="border"></div>
+    </div>
+    <div itemprop="articleBody">
+        <h1 id="update">Update</h1>
+<pre style="background-color:#2b303b;">
+<code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span style="color:#c0c5ce;"> pacman</span><span style="color:#bf616a;"> -Syu 
+</span></code></pre><h1 id="install">Install</h1>
+<pre style="background-color:#2b303b;">
+<code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span style="color:#c0c5ce;"> apt install zsh tilix build-essential htop keepassx python3-venv python3-pip python-dev python3-dev libevent-dev npm fonts-powerline 
+</span><span style="color:#bf616a;">sudo</span><span style="color:#c0c5ce;"> apt install openjdk-11-jre openjdk-11-jdk docker.io docker-compose yarn flameshot
+</span><span style="color:#bf616a;">sudo</span><span style="color:#c0c5ce;"> apt install texlive-full texmaker
+</span></code></pre><h2 id="brew">Brew</h2>
+<pre style="background-color:#2b303b;">
+<code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sh -c </span><span style="color:#c0c5ce;">&quot;$</span><span style="color:#a3be8c;">(</span><span style="color:#bf616a;">curl -fsSL</span><span style="color:#a3be8c;"> https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)</span><span style="color:#c0c5ce;">&quot;
+</span><span style="color:#bf616a;">test -r ~</span><span style="color:#c0c5ce;">/.zshrc &amp;&amp; </span><span style="color:#96b5b4;">echo </span><span style="color:#c0c5ce;">&quot;</span><span style="color:#a3be8c;">eval </span><span style="color:#96b5b4;">\$</span><span style="color:#a3be8c;">(</span><span style="color:#c0c5ce;">$</span><span style="color:#a3be8c;">(</span><span style="color:#bf616a;">brew --prefix</span><span style="color:#a3be8c;">)/bin/brew shellenv)</span><span style="color:#c0c5ce;">&quot; &gt;&gt;</span><span style="color:#bf616a;">~</span><span style="color:#c0c5ce;">/.zshrc
+</span></code></pre><h1 id="brew-with-shortcuts">Brew with shortcuts</h1>
+<pre style="background-color:#2b303b;">
+<code class="language-bash" data-lang="bash"><span style="color:#bf616a;">brew</span><span style="color:#c0c5ce;"> install fzf
+$</span><span style="color:#bf616a;">(brew --prefix)/opt/fzf/install
+</span></code></pre><h1 id="snap">Snap</h1>
+<pre style="background-color:#2b303b;">
+<code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span style="color:#c0c5ce;"> apt install snapd
+</span><span style="color:#bf616a;">snap</span><span style="color:#c0c5ce;"> xbindkey</span><span style="color:#bf616a;"> -y
+sudo</span><span style="color:#c0c5ce;"> snap install code</span><span style="color:#bf616a;"> --classic
+sudo</span><span style="color:#c0c5ce;"> snap install pycharm-community</span><span style="color:#bf616a;"> --classic
+sudo</span><span style="color:#c0c5ce;"> snap install intellij-community</span><span style="color:#bf616a;"> --classic
+</span></code></pre><h1 id="ohmyzsh">ohmyzsh</h1>
+<p>Also makes <strong>zsh default terminal</strong></p>
+<pre style="background-color:#2b303b;">
+<code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sh -c </span><span style="color:#c0c5ce;">&quot;$</span><span style="color:#a3be8c;">(</span><span style="color:#bf616a;">curl -fsSL</span><span style="color:#a3be8c;"> https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)</span><span style="color:#c0c5ce;">&quot;
+</span></code></pre><h1 id="git-config-dotfiles-repository">Git config / dotfiles repository</h1>
+<p>As explained <a href="https://www.atlassian.com/git/tutorials/dotfiles">here</a> or in the pdf in negasave backup folder. The following is not yet 100% tested, but should work. </p>
+<ol>
+<li>copy <code>.zshrc</code> from <a href="https://github.com/medizinmensch/dotfiles/">dotfiles</a> repository to <code>~</code> path</li>
+<li>exec</li>
+</ol>
+<pre style="background-color:#2b303b;">
+<code class="language-bash" data-lang="bash"><span style="color:#96b5b4;">echo </span><span style="color:#c0c5ce;">&quot;</span><span style="color:#a3be8c;">.cfg</span><span style="color:#c0c5ce;">&quot; &gt;&gt; .gitignore
+</span><span style="color:#bf616a;">git</span><span style="color:#c0c5ce;"> clone</span><span style="color:#bf616a;"> --bare</span><span style="color:#c0c5ce;"> https://github.com/medizinmensch/dotfiles/ $</span><span style="color:#bf616a;">Home</span><span style="color:#c0c5ce;">/.dotfiles
+</span><span style="color:#bf616a;">config</span><span style="color:#c0c5ce;"> checkout
+</span><span style="color:#bf616a;">config</span><span style="color:#c0c5ce;"> config</span><span style="color:#bf616a;"> --local</span><span style="color:#c0c5ce;"> status.showUntrackedFiles no
+</span></code></pre>
+<p>(to prevent recursion problems, clone, download and ignore untracked files)</p>
+<h1 id="i3">i3</h1>
+<p>To change i3 color config, copy the file from <code>website/backups/.i3/config</code> to <code>~/.i3/config</code>. Changed is:</p>
+<ul>
+<li>Theme Colors -&gt; class -&gt; client.focues / background</li>
+</ul>
+<h1 id="duplicati">Duplicati</h1>
+<p>Like explained <a href="https://xo.tc/installing-duplicati-on-an-arch-linux-laptop.html">here</a>. </p>
+<p><strong>Install:</strong></p>
+<pre style="background-color:#2b303b;">
+<code class="language-bash" data-lang="bash"><span style="color:#bf616a;">git</span><span style="color:#c0c5ce;"> clone https://aur.archlinux.org/duplicati-latest.git
+</span><span style="color:#96b5b4;">cd</span><span style="color:#c0c5ce;"> duplicati-latest
+</span><span style="color:#bf616a;">makepkg -si
+</span></code></pre>
+<p><strong>Start service:</strong></p>
+<pre style="background-color:#2b303b;">
+<code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span style="color:#c0c5ce;"> systemctl enable duplicati.service
+</span><span style="color:#bf616a;">sudo</span><span style="color:#c0c5ce;"> systemctl start duplicati.service
+</span></code></pre>
+<p>Access at <a href="http://localhost:8200">localhost:8200</a></p>
+<h1 id="todo">TODO</h1>
+<ul>
+<li>make terminator default terminal</li>
+<li>configs ?</li>
+</ul>
+
+    </div>
+    <time datetime="2019-11-27" class="date" itemprop="datePublished">
+        27 Nov 2019
+    </time>
+</article>
+
+        </main>
+        
+        <footer>
+            
+            <div class="border"></div>
+            <div class="footer">
+                <small class="footer-left">
+                    Copyright &copy; Youri Seichter
+                </small>
+                <small class="footer-right">
+                    v2.1
+                </small>
+            </div>
+        
+        </footer>
+    
+        </div>
+    </body>
+</html>
